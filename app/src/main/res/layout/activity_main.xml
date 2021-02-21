@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="68dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ChatBtn"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_chat"
+        app:layout_constraintEnd_toStartOf="@+id/BellBtn"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/gdStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/BellBtn"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/EllipseBtn"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/ic_ellipse_71"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/EllipseQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/EllipseBtn"
+        app:layout_constraintEnd_toEndOf="@+id/EllipseBtn"
+        app:layout_constraintStart_toStartOf="@+id/EllipseBtn"
+        app:layout_constraintTop_toTopOf="@+id/EllipseBtn" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/BtnHam"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/gdCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/BtnHam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/ic_hamburger"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnHam"
+        app:layout_constraintEnd_toEndOf="@+id/BtnHam"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/BtnHam"
+        app:layout_constraintTop_toTopOf="@+id/BtnHam"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/BgWhite"
+        android:layout_width="414dp"
+        android:layout_height="451dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_rectangle_746"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="411dp"
+        android:layout_marginBottom="469dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="262dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Favorite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintEnd_toStartOf="@+id/gdStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gdCenter" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/HeartIc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="@+id/Favorite"
+        app:layout_constraintEnd_toEndOf="@+id/Favorite"
+        app:layout_constraintStart_toStartOf="@+id/Favorite"
+        app:layout_constraintTop_toTopOf="@+id/Favorite" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Rectangle0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintEnd_toStartOf="@+id/gdStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Favorite" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Rectangle1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintEnd_toStartOf="@+id/gdStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rectangle0" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Rectangle2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintEnd_toStartOf="@+id/gdStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rectangle1" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Rectangle3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintEnd_toStartOf="@+id/gdStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rectangle2" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/BtnFollow"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/Favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdStart"
+        app:layout_constraintTop_toTopOf="@+id/Favorite" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/BtnFollowTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="+ Follow"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/BtnFollow"
+        app:layout_constraintEnd_toEndOf="@+id/BtnFollow"
+        app:layout_constraintStart_toStartOf="@+id/BtnFollow"
+        app:layout_constraintTop_toTopOf="@+id/BtnFollow" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/PostQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="1,922"
+        android:textColor="@color/black_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/FollowersQuantity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gdStart"
+        app:layout_constraintTop_toTopOf="@+id/BgWhite" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:text="posts"
+        android:textColor="@color/black_500"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/PostQuantity"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/PostQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/PostQuantity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/FollowersQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="3,875"
+        android:textColor="@color/black_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/FollowingQuantity"
+        app:layout_constraintTop_toTopOf="@+id/PostQuantity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:text="followers"
+        android:textColor="@color/black_500"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/FollowersQuantity"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/FollowersQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/FollowersQuantity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/FollowingQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="1,922"
+        android:textColor="@color/black_700"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/FollowersQuantity" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_light"
+        android:text="following"
+        android:textColor="@color/black_500"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/FollowingQuantity"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/FollowingQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/FollowingQuantity" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="@+id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/Posts">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/slideBtn"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/blue_700"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imageQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="32+"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/slideBtn"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="@+id/slideBtn"
+                app:layout_constraintTop_toTopOf="@+id/slideBtn" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imagesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="Images"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageQuantity"
+                app:layout_constraintHorizontal_bias="0.418"
+                app:layout_constraintStart_toStartOf="@+id/imageQuantity"
+                app:layout_constraintTop_toBottomOf="@+id/imageQuantity" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageItemBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toEndOf="@id/slideBtn"
+                app:layout_constraintTop_toTopOf="@id/slideBtn"
+                app:srcCompat="@drawable/image_item" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageItemBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toEndOf="@id/imageItemBtn1"
+                app:layout_constraintTop_toTopOf="@id/imageItemBtn1"
+                app:srcCompat="@drawable/image_02" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageItemBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:layout_constraintStart_toEndOf="@id/imageItemBtn2"
+                app:layout_constraintTop_toTopOf="@id/imageItemBtn2"
+                app:srcCompat="@drawable/image_03" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_pin"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Floral Park, New York, U.S."
+        android:textColor="@color/black_700"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/pin"
+        app:layout_constraintTop_toTopOf="@+id/pin" />
+
+    <ScrollView
+        android:id="@+id/article"
+        android:layout_width="323dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/pin"
+        app:layout_constraintVertical_bias="0.089">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/article1"
+            android:layout_width="324dp"
+            android:layout_height="130dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/article_text_view"
+            android:textColor="@color/black_200"
+            android:textSize="12sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
